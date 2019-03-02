@@ -14,4 +14,19 @@ object Form1: TForm1
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 96
+    Top = 48
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+  end
+  object ADOConnection1: TADOConnection
+    ConnectionString = 
+      'Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\123\Docum' +
+      'ents\Test\Win32\Debug\Phisics.accdb;Persist Security Info=False'
+    Provider = 'Microsoft.ACE.OLEDB.12.0'
+    Left = 136
+    Top = 72
+  end
 end

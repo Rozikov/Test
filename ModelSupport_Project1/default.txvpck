@@ -4,5 +4,39 @@
     <property name="$defaultDiagram" value="true" />
     <property name="$metaclass" value="Package Diagram" />
     <property name="$name" value="default" />
+    <reference referencedUin="design:view:::19giuqi80xs_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,101,134" />
+      <reference referencedUin="delphi:e_class:src:Project1:Project1.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::e2q0en8cmon_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="130,1,108,134" />
+      <reference referencedUin="delphi:e_class:src:Project1:MenuUnit.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:MenuUnit.Menu" />
+    </reference>
+    <reference referencedUin="design:view:::nfspt7fq04f_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="257,1,170,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:PhisicsControllerUnit.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:PhisicsControllerUnit.PhisicsController" />
+    </reference>
+    <reference referencedUin="design:view:::lzewbczj2ze_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="238,163,137,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:ControllersUnit.Controllers" />
+      <reference referencedUin="delphi:e_class:src:Project1:ControllersUnit.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::mw32e1rniwj_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="130,154,100,151" />
+      <reference referencedUin="delphi:e_class:src:Project1:Unit1.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project1:Unit1.TForm1" />
+    </reference>
+    <reference referencedUin="design:view:::34jvo0472r4kz36ui_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Project1:MainUnit.Main" />
+      <reference referencedUin="delphi:e_class:src:Project1:MainUnit.@unitclass" />
+    </reference>
   </view>
 </nodeSet>

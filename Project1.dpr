@@ -4,7 +4,13 @@ uses
   Vcl.Forms,
   Unit1 in 'Unit1.pas' {Form1},
   ControllersUnit in 'ControllersUnit.pas',
-  PhisicsControllerUnit in 'PhisicsControllerUnit.pas';
+  PhisicsControllerUnit in 'PhisicsControllerUnit.pas',
+  MenuUnit in 'MenuUnit.pas',
+  MainUnit in 'MainUnit.pas',
+  AdaptersUnit in 'AdaptersUnit.pas',
+  AccessAdapterUnit in 'AccessAdapterUnit.pas',
+  TestsUnit in 'TestsUnit.pas',
+  Test1Unit in 'Test1Unit.pas';
 
 {$R *.res}
 
