@@ -15,7 +15,16 @@ program Project1Tests;
 {$ENDIF}
 
 uses
-  DUnitTestRunner;
+  DUnitTestRunner,
+  TestPhisicsControllerUnit in 'TestPhisicsControllerUnit.pas',
+  AccessAdapterUnit in '..\AccessAdapterUnit.pas',
+  AdaptersUnit in '..\AdaptersUnit.pas',
+  ControllersUnit in '..\ControllersUnit.pas',
+  MainUnit in '..\MainUnit.pas',
+  MenuUnit in '..\MenuUnit.pas',
+  PhisicsControllerUnit in '..\PhisicsControllerUnit.pas',
+  Test1Unit in '..\Test1Unit.pas',
+  TestsUnit in '..\TestsUnit.pas';
 
 {$R *.RES}
 

@@ -109,7 +109,8 @@ begin
   begin
     Close;
     SQL.Clear;
-    SQL.Add('SELECT caption FROM' + answer + ';');
+    //SQL.Add('SELECT caption FROM ' + answer + ';'); !!!!!!!!!!!!!!!!!!!!!!!
+    SQL.Add('SELECT caption FROM Answer1;');
     Open;
     Active := True;
   end;
@@ -143,7 +144,7 @@ begin
   begin
     Close;
     SQL.Clear;
-    SQL.Add('SELECT caption FROM' + quest + ';');
+    SQL.Add('SELECT caption FROM ' + quest + ';');
     Open;
     Active := True;
   end;

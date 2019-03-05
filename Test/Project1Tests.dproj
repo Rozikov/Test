@@ -81,6 +81,15 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
+        <DCCReference Include="TestPhisicsControllerUnit.pas"/>
+        <DCCReference Include="..\AccessAdapterUnit.pas"/>
+        <DCCReference Include="..\AdaptersUnit.pas"/>
+        <DCCReference Include="..\ControllersUnit.pas"/>
+        <DCCReference Include="..\MainUnit.pas"/>
+        <DCCReference Include="..\MenuUnit.pas"/>
+        <DCCReference Include="..\PhisicsControllerUnit.pas"/>
+        <DCCReference Include="..\Test1Unit.pas"/>
+        <DCCReference Include="..\TestsUnit.pas"/>
         <None Include="ModelSupport_Project1Tests\default.txaPackage"/>
         <None Include="ModelSupport_Project1Tests\default.txvpck"/>
         <BuildConfiguration Include="Release">

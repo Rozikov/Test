@@ -10,17 +10,16 @@ uses
 
 type
   TForm1 = class(TForm)
-    Label1: TLabel;
-    ADOConnection1: TADOConnection;
-  //TButton1: TButton;
     procedure FormCreate(Sender: TObject);
   private
+    Button1: TButton;
     list: Tlist<string>;
-    //Buttons: TList<TButton>;   // страница 128
-    Labels: Tlist<TLabel>;
+    Buttons: Tlist<TButton>; // страница 128
+    // Labels: Tlist<TLabel>;
     /// <link>aggregation</link>
     Controller1: Controllers;
-    procedure destroysLabels;
+    procedure destroysButtons;
+    // procedure destroysLabels;
     procedure createPanels(list: Tlist<String>);
   public
     procedure onClick(Sender: TObject);
@@ -40,13 +39,13 @@ var
   s: string;
 begin
   i := 0;
-  Labels := Tlist<TLabel>.Create;
+  Buttons := Tlist<TButton>.Create;
   self.list := Tlist<string>.Create;
   self.list := list;
   for s in list do
   begin
-    Labels.Add(TLabel.Create(self));
-    with Labels.Last do
+    Buttons.Add(TButton.Create(self));
+    with Buttons.Last do
     begin
       Parent := self;
       Top := i * 41;
@@ -58,18 +57,18 @@ begin
   end;
 end;
 
-procedure TForm1.destroysLabels;
-var
-  s: string;
+procedure TForm1.destroysButtons;
+{var
+  s: string;}
 begin
-  for s in list do
+  {for s in list do
   begin
-    with Labels.Last do
+    with Buttons.Last do
     begin
       Parent := nil;
       Destroy;
     end;
-  end;
+  end;}
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
@@ -89,14 +88,14 @@ var
   answers: Tlist<string>;
   correct: TDictionary<integer, integer>;
 begin
-  Controller1.setTest((Sender as TLabel).Caption);
-  destroysLabels;
+  Controller1.setTest((Sender as TButton).Caption);
+  destroysButtons;
   quest := Tlist<string>.Create;
   answers := Tlist<string>.Create;
   correct := TDictionary<integer, integer>.Create;
-  quest:= Controller1.getQuest;
-  answers:= Controller1.getAnswer;
-  correct:= Controller1.getCorrect;
+  quest := Controller1.getQuest;
+  answers := Controller1.getAnswer;
+  correct := Controller1.getCorrect;
 end;
 
 end.
